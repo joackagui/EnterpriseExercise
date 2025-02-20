@@ -11,6 +11,6 @@ public class Main {
         Authenticable employee = employeeFactory.createUser("Jose", "789");
 
         securitySystem.loginVerification(admin, "Juan", "123");
-        securitySystem.permissionVerification(admin, "hit customers");
+        securitySystem.permissionVerification((Authorizable) admin, "hit customers");
     }
 }
